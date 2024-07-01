@@ -12,12 +12,15 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(top:50.0),
+        padding: const EdgeInsets.all(50.0),
         child: Column(
           children: <Widget>[
             Row(
               children: <Widget>[
-                CircleAvatar(radius: 40),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: CircleAvatar(radius: 40),
+                ),
                 Column(
                   children: <Widget>[
                     Text("Sonali Yadav"),
@@ -44,10 +47,19 @@ class Home extends StatelessWidget {
                     Icon(Icons.pin_drop),
                     Text("Dwarka, New Delhi")
                     ],
-                  )
+                  ),
+                  Row(children: <Widget>[
+                    Icon(Icons.email),
+                    Text("sonaliyadav0617@gmail.com")
+                    ],
+                  ),
+                  Row(children: <Widget>[
+                      Icon(Icons.call),
+                    Text("9555066091")
+                    ],
+                  ),
                 ],
             )
-
           ],
         ),
       )
