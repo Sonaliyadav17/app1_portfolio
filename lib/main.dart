@@ -27,17 +27,27 @@ class Home extends StatelessWidget {
               ],
             ),
             Column(
+                children: <Widget>[
+                  Row(
+                      children: <Widget>[
+                        Icon(Icons.school),
+                        Text("IGDTUW")
+                      ],
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Icon(Icons.cast_for_education),
+                      Text("CSE-AI")
+                    ],
+                  ),
+                  Row(children: <Widget>[
+                    Icon(Icons.pin_drop),
+                    Text("Dwarka, New Delhi")
+                    ],
+                  )
+                ],
             )
-            // Row(
-            //     children: <Widget>[
-            //       Text("i am keenly interested in learning and opting new technologies")
-            //     ],
-            // ),
-            // Row(
-            //   children: <Widget>[
-            //     Text("created by Sonali Yadav")
-            //   ],
-            // )
+
           ],
         ),
       )
